@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Frames24</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="styles/share.css" rel="stylesheet" type="text/css">
+    <link href="styles/index.css" rel="stylesheet" type="text/css">
+
+</head>
+
+
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="resources/images/logo.png" height="30">
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-user"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">
+                        <img src="resources/images/cart.png" height="40" style="filter: invert(50%)">
+
+                    </a>
+                </li>
+                <li class="dropdown nav-item pull-right">
+                    <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle">More<strong class="caret"></strong></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="index.html" id="sign-out-btn">Sign Out</a>
+                        </li>
+                        <li>
+                            <a href="dashboard-login.html">Employee System</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-md-12" id="title-search-box">
+                <img src="resources/images/logo.png" id="main-logo" height="120">
+
+                    <form id="title-search-form" class="input-group" method="GET" action="movie-list.html" >
+                        <input type="text" name="title" id="autocomplete"
+                               class="autocomplete-searchbox form-control"
+                               placeholder="Search Movies"
+                               required="required">
+                        <input type="hidden" name="page" value="1" />
+                        <input type="hidden" name="page_cap" value="20" />
+                        <input type="hidden" name="sorting" value="rating" />
+                        <input type="hidden" name="order" value="desc" />
+
+<!--                        <input type="submit" value="Search" id="title-search-btn">-->
+<!--                        <button type="button">Advanced Search</button>-->
+                    </form>
+            <button type="button" id="search-btn">Search Frames24</button>
+            <button type="button" id="advanced-search-btn">Advanced Search</button>
+        </div>
+    </div>
+    <div class="row browse-row">
+        <div class="col-md-6 ">
+            <!-- Categories Widget -->
+            <div class="card my-4">
+                <h5 class="card-header">Genres</h5>
+                <div class="card-body" id="genre-list">
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <!-- Side Widget -->
+            <div class="card my-4">
+                <h5 class="card-header">Title</h5>
+                <div class="card-body" id="title-first-letter-list">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /.row -->
+
+</div>
+<!-- /.container -->
+
+<!-- Footer -->
+<footer class="py-3 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Frames24 2020</p>
+    </div>
+    <!-- /.container -->
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- include jquery autocomplete JS  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.7/jquery.autocomplete.min.js"></script>
+<script src="scripts/nav.js"></script>
+<script src="scripts/index.js"></script>
+
+
+</body>
+
+</html>

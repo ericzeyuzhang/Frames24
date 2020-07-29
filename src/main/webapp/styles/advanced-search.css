@@ -1,0 +1,30 @@
+body {
+    padding-top: 150px;
+}
+
+#advanced-search-box {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    width: 400px;
+    margin: 50px auto;
+}
+input {
+    border-radius: 10px;
+    border: 1px solid #ced4da;
+}
+
+
+label {
+    margin-left: 110px;
+    margin-bottom: 4px;
+}
+input {
+    text-align: center;
+}
+.search-btn {
+    padding-top: 30px;
+}

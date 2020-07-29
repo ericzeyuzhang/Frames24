@@ -1,0 +1,72 @@
+body {
+    padding-top: 150px;
+}
+/*.text-center {*/
+/*    text-align: center;*/
+/*}*/
+.g-recaptcha {
+    display: inline-block;
+
+    transform: scale(0.9);
+    width: 100%;
+
+}
+.g-recaptcha div {
+    margin: 0 auto;
+}
+
+
+#sign-in-box {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    width: 350px;
+    margin: 20px auto;
+}
+.btn {
+    border: none;
+    background: #404040;
+    color: #ffffff !important;
+    font-weight: 100;
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+
+}
+.btn:hover {
+    cursor: pointer;
+    color: #404040 !important;
+    font-weight: 700 !important;
+    letter-spacing: 3px;
+    background: none;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.3s ease 0s;
+}
+input {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-left: 35px;
+    margin-bottom: 4px;
+}
+
+#hint {
+    line-height: 5px;
+    padding-top: 0px;
+}
+
+/*form {*/
+/*    padding-left: 50px;*/
+/*    padding-right: 50px;*/
+/*}*/
+/*label {*/
+/*    !*text-align: left;*!*/
+/*    float: left;*/
+/*}*/

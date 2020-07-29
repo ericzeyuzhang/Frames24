@@ -1,0 +1,37 @@
+body {
+    padding-top: 80px;
+    margin-bottom: 60px;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+nav {
+    height: 60px;
+}
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+li {
+    margin: auto auto;
+}
+.column {
+    margin: auto auto;
+}
+.msg-box {
+    color: darkred;
+    height: 25px;
+
+}
+.dropdown-menu {
+    background-color: #343a40!important;
+    line-height: 35px;
+
+}
+.dropdown-menu a {
+    color: lightgray;
+    margin-left: 10px;
+}

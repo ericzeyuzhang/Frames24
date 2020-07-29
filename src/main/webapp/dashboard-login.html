@@ -1,0 +1,48 @@
+<!-- This page will be redirected from any url if you are not logged in -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        #hint {
+            line-height: 5px;
+        }
+    </style>
+    <title>Frames24 Management System</title>
+</head>
+<body>
+<h2>Frames24 Management System</h2>
+<!-- Set the method to POST to avoid showing the username/password in the URL
+     The default action is disabled to allow your own implementation. -->
+<form id="login_form" method="post" action="#">
+    <label><b>Email</b></label>
+    <label>
+        <input name="email" placeholder="Enter Username" type="text">
+    </label>
+    <br>
+    <label><b>Password</b></label>
+    <label>
+        <input name="password" placeholder="Enter Password" type="password">
+    </label>
+    <br>
+    <div class="g-recaptcha" data-sitekey="6LeKoa0ZAAAAAIZgr76XG9j6zf_mZB-DqNq1grzY"></div>
+
+    <input type="submit" value="Login">
+    <div id="hint" class="text-center">
+        <p>For testing, use</p>
+        <p>email = test@gmail.com</p>
+        <p>password = testpwd</p>
+    </div>
+</form>
+
+<div id="login_error_message"></div>
+
+<!-- include jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
+<!-- include our own JS file -->
+<script src="scripts/dashboard-login.js"></script>
+
+</body>
+</html>

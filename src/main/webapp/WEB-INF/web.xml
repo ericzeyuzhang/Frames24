@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>project3</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+<!--  <resource-ref>-->
+<!--    <description>MySQL DataSource</description>-->
+<!--    <res-ref-name>jdbc/moviedb</res-ref-name>-->
+<!--    <res-type>javax.sql.DataSource</res-type>-->
+<!--    <res-auth>Container</res-auth>-->
+<!--  </resource-ref>-->
+
+  <filter-mapping>
+    <filter-name>LoginFilter</filter-name>
+    <url-pattern>/cart.html</url-pattern>
+    <url-pattern>/checkout.html</url-pattern>
+    <url-pattern>/order-conform.html</url-pattern>
+    <url-pattern>/checkout.html</url-pattern>
+    <url-pattern>/api/payment-validation</url-pattern>
+    <url-pattern>/api/cart-info</url-pattern>
+    <url-pattern>/api/add-to-cart</url-pattern>
+
+  </filter-mapping>
+
+  <filter-mapping>
+    <filter-name>QueryTimeLoggingFilter</filter-name>
+    <url-pattern>/api/movie-list</url-pattern>
+  </filter-mapping>
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>HTTPSOnly</web-resource-name>
+      <url-pattern>/*</url-pattern>
+    </web-resource-collection>
+    <user-data-constraint>
+      <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+    </user-data-constraint>
+  </security-constraint>
+</web-app>

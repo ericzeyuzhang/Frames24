@@ -1,0 +1,155 @@
+<!-- This page will be redirected from any url if you are not logged in -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="styles/share.css" rel="stylesheet" type="text/css">
+    <link href="styles/advanced-search.css" rel="stylesheet" type="text/css">
+
+    <title>Advanced Search</title>
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="resources/images/logo.png" height="30">
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-user"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">
+                        <img src="resources/images/cart.png" height="40" style="filter: invert(50%)">
+
+                    </a>
+                </li>
+                <li class="dropdown nav-item pull-right">
+                    <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle">More<strong class="caret"></strong></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="index.html" id="sign-out-btn">Sign Out</a>
+                        </li>
+                        <li>
+                            <a href="dashboard-login.html">Employee System</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div>
+    <div class="text-center">
+        <a href="index.html">
+            <img src="resources/images/logo_inverted.png" height="60">
+        </a>
+    </div>
+    <div class="text-center">
+
+    </div>
+    <div id="advanced-search-box">
+        <div class="text-center">
+            <h2>Advanced Search</h2>
+
+        </div>
+        <!-- Set the method to POST to avoid showing the username/password in the URL
+             The default action is disabled to allow your own implementation. -->
+        <form id="advanced-search-form" method="get" action="movie-list.html">
+            <label><b>Title</b></label>
+            <div class="text-center">
+                <input name="title" placeholder="Title" type="text">
+            </div>
+            <label><b>Year</b></label><br>
+            <div class="text-center">
+                <input name="year" placeholder="Year" type="text"><br>
+            </div>
+            <label><b>Director</b></label><br>
+            <div class="text-center">
+                <input name="director" placeholder="Director" type="text"><br>
+            </div>
+            <label><b>Star</b></label><br>
+            <div class="text-center">
+                <input name="star" placeholder="Star" type="text"><br>
+            </div>
+            <input type="hidden" name="page" value="1" />
+            <input type="hidden" name="page_cap" value="20" />
+            <input type="hidden" name="sorting" value="rating" />
+            <input type="hidden" name="order" value="desc" />
+            <div class="text-center search-btn">
+                <input type="submit" value="Search">
+            </div>
+        </form>
+
+        <div id="advanced-search-error-msg" class="msg-box"></div>
+    </div>
+</div>
+<!--<section id="search">-->
+<!--    <h2>Search</h2>-->
+<!--    &lt;!&ndash; Set the method to POST to avoid showing the username/password in the URL-->
+<!--         The default action is disabled to allow your own implementation. &ndash;&gt;-->
+<!--    <form id="search_form" method="GET" action="movie-list.html">-->
+<!--        <label><b>Title</b></label>-->
+<!--        <label>-->
+<!--            <input name="title" placeholder="Enter movie title" type="text">-->
+
+<!--        </label>-->
+<!--        <br>-->
+<!--        <label><b>Year</b></label>-->
+<!--        <label>-->
+<!--            <input name="year" placeholder="Enter movie year" type="text">-->
+
+<!--        </label>-->
+<!--        <br>-->
+<!--        <label><b>Director</b></label>-->
+<!--        <label>-->
+<!--            <input name="director" placeholder="Enter movie director" type="text">-->
+<!--        </label>-->
+<!--        <br>-->
+<!--        <label><b>Star</b></label>-->
+<!--        <label>-->
+<!--            <input name="star" placeholder="Enter movie star name" type="text">-->
+<!--        </label>-->
+<!--        <br>-->
+
+<!--        <input type="submit" value="Search">-->
+<!--    </form>-->
+
+<!--    <div id="search_error_message"></div>-->
+<!--</section>-->
+
+<!-- Footer -->
+<footer class="py-3 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Frames24 2020</p>
+    </div>
+    <!-- /.container -->
+</footer>
+
+<!-- include jQuery-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- include jquery autocomplete JS  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.7/jquery.autocomplete.min.js"></script>
+<script src="scripts/nav.js"></script>
+
+</body>
+</html>

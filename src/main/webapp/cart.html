@@ -1,0 +1,99 @@
+<!-- This page will be redirected from any url if you are not logged in -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/share.css">
+    <link rel="stylesheet" href="styles/cart.css">
+
+    <title>Cart</title>
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="resources/images/logo.png" height="30">
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-user"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">
+                        <img src="resources/images/cart.png" height="40" style="filter: invert(50%)">
+
+                    </a>
+                </li>
+                <li class="dropdown nav-item pull-right">
+                    <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle">More<strong class="caret"></strong></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="index.html" id="sign-out-btn">Sign Out</a>
+                        </li>
+                        <li>
+                            <a href="dashboard-login.html">Employee System</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-8 column">
+            <h2>Cart</h2>
+            <table id=cart-table>
+                <!-- Create a table header -->
+                <thead>
+                <tr>
+                    <!-- Titles of each column-->
+                    <th style="width: 300px">Movie</th>
+                    <th style="width: 100px; text-align: center">Quantity</th>
+                </tr>
+                </thead>
+                <!-- Table body is left empty here, will be populated with the data retrieved with index.js -->
+                <!-- Again, id "star_table_body" is useful for jQuery to find this html element -->
+                <tbody id=cart-table-body></tbody>
+            </table>
+            <div class="line"></div>
+        <div class="row clearfix wrapper">
+                <button type="button" class="btn btn-default" id="checkout-btn">
+                    → Proceed to checkout
+                </button>
+        </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<footer class="py-3 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Frames24 2020</p>
+    </div>
+    <!-- /.container -->
+</footer>
+
+<!-- include jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<!-- include our own JS file -->
+<script src="scripts/nav.js"></script>
+<script src="scripts/cart.js"></script>
+
+</body>
+</html>

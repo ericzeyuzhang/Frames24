@@ -1,0 +1,126 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/share.css">
+    <link rel="stylesheet" href="styles/single-movie.css">
+    <title>Single Movie</title>
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="resources/images/logo.png" height="30">
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-user"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">
+                        <img src="resources/images/cart.png" height="40" style="filter: invert(50%)">
+
+                    </a>
+                </li>
+                <li class="dropdown nav-item pull-right">
+                    <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle">More<strong class="caret"></strong></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="index.html" id="sign-out-btn">Sign Out</a>
+                        </li>
+                        <li>
+                            <a href="dashboard-login.html">Employee System</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-8 column">
+            <button type="button" class="btn btn-default" id="back-btn">
+                ← Back to search results
+            </button>
+            <h1>
+
+            </h1>
+        </div>
+    </div>
+    <div class="row clearfix">
+        <div class="col-md-8 column">
+            <div class="row clearfix">
+        <div class="col-md-6 column">
+            <p id="movie-info">
+
+            </p>
+        </div>
+        <div class="col-md-6 column">
+            <button type="button" class="btn btn-default add-to-cart-btn">
+                <img src='resources/images/cart.png' width='35' height='35'></img>
+                Add to Cart
+            </button>
+        </div>
+        </div>
+        </div>
+    </div>
+    <div class="row clearfix">
+        <div class="col-md-8 column">
+            <table id=star-table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Star</th>
+                    <th>Birth Year</th>
+
+                </tr>
+                </thead>
+
+                <!-- Table body is left empty here, will be populated with the data retrieved with single-star.js -->
+                <!-- single-star.js will find this html element by it's id "movie_table_body" -->
+                <tbody id=star-table-body></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+<footer class="py-3 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Frames24 2020</p>
+    </div>
+    <!-- /.container -->
+</footer>
+<!-- Load jQuery and Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<!-- Load our own JS file -->
+<!-- The path is relative to single-star.html, since these two files are in the same directory -->
+<!-- Note the url does not contain a "/" in the beginning, which means the url is relative to current path
+     otherwise the url is relative to the root path-->
+<script src="scripts/nav.js"></script>
+<script src="scripts/single-movie.js"></script>
+</body>
+
+
+</html>

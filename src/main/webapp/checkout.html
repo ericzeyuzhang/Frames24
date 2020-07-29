@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/share.css">
+    <link rel="stylesheet" href="styles/checkout.css">
+    <title>Checkout</title>
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="resources/images/logo.png" height="30">
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home
+
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Sign in</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">
+                        <img src="resources/images/cart.png" height="40" style="filter: invert(50%)">
+
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-8 column">
+            <h1>Checkout</h1>
+        </div>
+    </div>
+    <div class="row clearfix">
+        <div class="col-md-6 offset-md-1">
+            <div class="card my-4">
+            <h5 class="card-header">Order Summary</h5>
+            <div class="card-body">
+                <table id=order-summary-table>
+                    <!-- Create a table header -->
+                    <thead>
+                    <tr>
+                        <!-- Titles of each column-->
+                        <th style="width: 200px">Movie</th>
+                        <th style="width: 20px">Quantity</th>
+                    </tr>
+                    </thead>
+                    <!-- Table body is left empty here, will be populated with the data retrieved with index.js -->
+                    <!-- Again, id "star_table_body" is useful for jQuery to find this html element -->
+                    <tbody id=order-summary-table-body></tbody>
+                </table><br>
+            </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card my-4">
+            <h5 class="card-header">Payment</h5>
+            <div class="card-body">
+                <form id="payment-form">
+                    <label><b>Card Number: </b></label><br>
+                    <input name="card-number" placeholder="Enter card number" type="text" pattern="[0-9]*"><br>
+                    <label><b>First Name: </b></label><br>
+                    <input name="first-name" placeholder="Last Name" type="text"><br>
+                    <label><b>Last Name: </b></label><br>
+                    <input name="last-name" placeholder="Last Name" type="text"><br>
+                    <label><b>Expiration Data (MM/YY): </b></label><br>
+                    <select name="month">
+                        <option disabled selected value>MM</option>
+                        <option value="1">01</option>
+                        <option value="2">02</option>
+                        <option value="3">03</option>
+                        <option value="4">04</option>
+                        <option value="5">05</option>
+                        <option value="6">06</option>
+                        <option value="7">07</option>
+                        <option value="8">08</option>
+                        <option value="9">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    <select name="year">
+                        <option disabled selected value>YY</option>
+                        <option value="2020">20</option>
+                        <option value="2021">21</option>
+                        <option value="2022">22</option>
+                        <option value="2023">23</option>
+                        <option value="2024">24</option>
+                        <option value="2025">25</option>
+                        <option value="2026">26</option>
+                        <option value="2027">27</option>
+                        <option value="2028">28</option>
+                        <option value="2029">29</option>
+                        <option value="2030">30</option>
+                    </select><br>
+                    <p id="payment-err-msg"></p>
+                    <div id="payment-submit-btn-wrapper">
+                    <input id="payment-submit-btn" type="submit" value="Place Order">
+                    </div>
+                    <div id="hint" class="text-center">
+                        <p>For testing, use</p>
+                        <p>Card number = 1111222233334444</p>
+                        <p>First name = testuser</p>
+                        <p>Last name = testuser</p>
+                        <p>Expiration Date = 01/25</p>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+</div>
+
+<!-- Footer -->
+<footer class="py-3 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Frames24 2020</p>
+    </div>
+    <!-- /.container -->
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="scripts/checkout.js"></script>
+</body>
+</html>

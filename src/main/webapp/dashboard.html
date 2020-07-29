@@ -1,0 +1,117 @@
+<!-- This page will be redirected from any url if you are not logged in -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+</head>
+<body>
+
+<h2>Dashboard</h2>
+<section>
+    <h3>Insert new star</h3>
+    <form id="star-form" method="post" action="#">
+        <label><b>Star Name</b></label>
+        <input name="name" placeholder="Enter Star Name" type="text">
+        <br>
+        <label><b>Birth Year</b></label>
+        <input name="birth-year" placeholder="Enter Birth year" type="text">
+        <br>
+
+        <input type="submit" value="submit">
+        <div id="star-error-msg" class="msg-box"></div>
+    </form>
+
+</section>
+
+<section>
+    <h3>Insert new genre</h3>
+    <form id="genre-form" method="post" action="#">
+        <label><b>Genre Name</b></label>
+        <input name="name" placeholder="Enter Genre Name" type="text">
+        <br>
+        <input type="submit" value="submit">
+        <div id="genre-error-msg" class="msg-box"></div>
+    </form>
+
+</section>
+
+<section>
+    <h3>Insert new movie / Query movie ID</h3>
+    <form id="movie-form" method="post" action="#">
+        <label><b>Title</b></label>
+        <input name="title" placeholder="Enter Movie Title" type="text">
+        <br>
+        <label><b>Year</b></label>
+        <input name="year" placeholder="Enter Movie Year" type="text">
+        <br>
+        <label><b>Director</b></label>
+        <input name="director" placeholder="Enter Movie Director" type="text">
+        <br>
+        <input type="submit" value="submit">
+        <div id="movie-error-msg" class="msg-box"></div>
+    </form>
+
+</section>
+
+<section>
+    <h3>Update Movie Rating</h3>
+    <form id="update-rating-form" method="post" action="#">
+        <label><b>Movie ID</b></label>
+        <input name="movie-id" placeholder="Enter Movie ID" type="text">
+        <br>
+
+        <label><b>Rating</b></label>
+        <input name="rating" placeholder="Enter Movie Ratings" type="text">
+        <br>
+        <label><b>Rating Votes</b></label>
+        <input name="rating-votes" placeholder="Enter Rating votes" type="text">
+        <br>
+        <input type="submit" value="submit">
+        <div id="update-rating-error-msg" class="msg-box"></div>
+    </form>
+
+</section>
+
+
+<section>
+    <h3>Link Genre with Movie</h3>
+    <form id="link-genre-form" method="post" action="#">
+        <label><b>Movie ID</b></label>
+        <input name="movie-id" placeholder="Enter Movie ID" type="text">
+        <br>
+        <label><b>Genre</b></label>
+        <input name="genre" placeholder="Enter Genre" type="text">
+        <br>
+
+        <input type="submit" value="submit">
+        <div id="link-genre-error-msg" class="msg-box"></div>
+    </form>
+
+</section>
+
+<section>
+    <h3>Link Star with Movie</h3>
+    <form id="link-star-form" method="post" action="#">
+        <label><b>Movie ID</b></label>
+        <input name="movie-id" placeholder="Enter Movie ID" type="text">
+        <br>
+        <label><b>Star Name</b></label>
+        <input name="star-name" placeholder="Enter Star Name" type="text">
+        <br>
+        <label><b>Star Birth Year</b></label>
+        <input name="birth-year" placeholder="Enter Star birth year" type="text">
+        <br>
+        <input type="submit" value="submit">
+        <div id="link-star-error-msg" class="msg-box"></div>
+    </form>
+
+</section>
+
+<!-- include jQuery-->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- include our own JS file -->
+ <script src="scripts/dashboard.js"></script>
+
+</body>
+</html>

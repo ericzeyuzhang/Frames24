@@ -1,0 +1,21 @@
+.column {
+    text-align: center;
+    margin: 0 auto;
+}
+table {
+    margin: 0 auto;
+}
+#hint {
+    padding-top: 10px;
+    line-height: 3px;
+}
+/*td, th {*/
+/*    border: 1px solid lightgray;*/
+/*}*/
+.card-header {
+    text-align: center;
+}
+#payment-submit-btn-wrapper {
+    margin-top: 20px;
+    text-align: center;
+}
