@@ -4,7 +4,7 @@ A full-stack school project from UCI CS122B: Projects in Databases and Web Appli
 
 In this project, I developed a website providing movie browsing, searching and purchasing services. I give it the name ***Frames24*** because the earliest movie has frame rate 24fps. 
 
-The website is available for access at: [frames24.cc](frames24.cc).
+The website is available for access at: [frames24.cc](http://frames24.cc).
 
 ## Server Architecture
 
