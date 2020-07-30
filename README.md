@@ -8,7 +8,7 @@ The website is available for access at: [frames24.cc](frames24.cc).
 
 ## Server Architecture
 
-<img src="https://user-images.githubusercontent.com/52809000/88956766-b429a200-d252-11ea-835a-10081b526d75.png" alt="image" style="zoom:50%;" />
+<img src="https://user-images.githubusercontent.com/52809000/88956766-b429a200-d252-11ea-835a-10081b526d75.png" alt="image" style="zoom: 33%;" />
 
 The server consists of three Ubuntu instances hosted by AWS EC2. 
 
@@ -46,7 +46,7 @@ Simulated by JMeter thread group, with # of threads set to: 1, 5, 20, 40.
 
 ### Test results
 
-<img src="https://user-images.githubusercontent.com/52809000/88957722-31a1e200-d254-11ea-8712-45e53f2716c6.png" alt="image" style="zoom:50%;" />
+<img src="https://user-images.githubusercontent.com/52809000/88957722-31a1e200-d254-11ea-8712-45e53f2716c6.png" alt="image" style="zoom: 33%;" />
 
-<img src="/Users/zeyu/Library/Application Support/typora-user-images/image-20200730110310308.png" alt="image-20200730110310308" style="zoom:50%;" />
+<img src="https://user-images.githubusercontent.com/52809000/88957736-38c8f000-d254-11ea-856d-405a7853916a.png" alt="image" style="zoom: 33%;" />
 
